@@ -1,0 +1,18 @@
+{
+  "name": "Make_token",
+  "version": "1.0.0",
+  "description": "https://qiita.com/amachino/items/8cf609f6345959ffc450#openzeppelin-ライブラリの導入",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "zeppelin-solidity": "^1.10.0"
+  }
+}

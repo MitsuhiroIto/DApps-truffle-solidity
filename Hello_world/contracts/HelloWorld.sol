@@ -1,8 +1,21 @@
-pragma solidity ^0.4.22;
-
-
+pragma solidity ^0.4.4;
+ 
 contract HelloWorld {
-  function get() public pure returns (string) {
-    return "Hello World!";
+ 
+  string public word;
+ 
+  event Set(address sender, string newWord);
+ 
+  function HelloWorld() public {
+    word = "Hello World!";
+  }
+ 
+  function get() public view returns (string) {
+    return word;
+  }
+ 
+  function set(string newWord) public {
+    word = newWord;
+    Set(msg.sender, newWord);
   }
 }

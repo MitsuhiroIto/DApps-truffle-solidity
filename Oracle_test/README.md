@@ -3,7 +3,7 @@ https://kndrck.co/posts/ethereum_oracles_a_simple_guide/
 
 ```
 testrpc
-truffle compile && truffle migrate
+truffle compile && truffle migrate　--reset
 node oracle.js
 node client.js
 

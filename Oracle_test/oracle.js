@@ -3,7 +3,7 @@ var OracleContract = require('./build/contracts/CMCOracle.json')
 var contract = require('truffle-contract')
 
 var Web3 = require('web3');
-var web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+var web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:7545'));
 
 // Truffle abstraction to interact with our
 // deployed contract
@@ -28,15 +28,8 @@ web3.eth.getAccounts((err, accounts) => {
     // With a callback function  
     oracleInstance.CallbackGetBTCCap()
     .watch((err, event) => {
-      // Fetch data
-      // and update it into the contract
-      fetch.fetchUrl('https://api.coinmarketcap.com/v1/global/', (err, m, b) => {
-        const cmcJson = JSON.parse(b.toString())
-        const btcMarketCap = parseInt(cmcJson.total_market_cap_usd)
+      oracleInstance.setBTCCap([1,2,3], {from: accounts[0]})
 
-        // Send data back contract on-chain
-        oracleInstance.setBTCCap(btcMarketCap, {from: accounts[0]})
-      })
     })
   })
   .catch((err) => {

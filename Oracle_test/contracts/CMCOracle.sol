@@ -5,7 +5,7 @@ contract CMCOracle {
   address public owner;
 
   // BTC Marketcap Storage
-  uint public btcMarketCap;
+  uint[] public btcMarketCap;
 
   // Callback function
   event CallbackGetBTCCap();
@@ -19,14 +19,14 @@ contract CMCOracle {
     CallbackGetBTCCap();
   }
 
-  function setBTCCap(uint cap) public {
+  function setBTCCap(uint[] cap) public {
     // If it isn't sent by a trusted oracle
     // a.k.a ourselves, ignore it
     require(msg.sender == owner);
     btcMarketCap = cap;
   }
 
-  function getBTCCap() constant public returns (uint) {
+  function getBTCCap() constant public returns (uint[]) {
     return btcMarketCap;
   }
 }

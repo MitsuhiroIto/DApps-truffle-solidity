@@ -27,7 +27,7 @@ web3.eth.getAccounts((err, accounts) => {
       oracleInstance.getBTCCap(),  // Get currently stored BTC Cap
       oracleInstance.updateBTCCap({from: accounts[0]})  // Request oracle to update the information
     ]
-
+    // console.log(web3.eth.getStorageAt(accounts, 0))
     // Map over all promises
     Promise.all(oraclePromises)
     .then((result) => {

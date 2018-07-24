@@ -28,7 +28,7 @@ web3.eth.getAccounts((err, accounts) => {
     // With a callback function  
     oracleInstance.CallbackGetBTCCap()
     .watch((err, event) => {
-      oracleInstance.setBTCCap([1,2,3], {from: accounts[0]})
+      oracleInstance.setBTCCap([1], {from: accounts[0]})
 
     })
   })

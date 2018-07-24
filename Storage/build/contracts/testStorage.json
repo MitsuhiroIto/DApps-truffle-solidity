@@ -1,0 +1,278 @@
+{
+  "contractName": "testStorage",
+  "abi": [],
+  "bytecode": "0x6080604052600f6000556014600155348015601957600080fd5b5060358060276000396000f3006080604052600080fd00a165627a7a72305820d23722dfc083f4aea41baddf63e8486aff641686d1afd4cec2acc7172ae47b8b0029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820d23722dfc083f4aea41baddf63e8486aff641686d1afd4cec2acc7172ae47b8b0029",
+  "sourceMap": "25:76:1:-;;;69:2;50:21;;94:2;75:21;;25:76;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:76:1;;;;;;;",
+  "deployedSourceMap": "25:76:1:-;;;;;",
+  "source": "pragma solidity ^0.4.0;\n\ncontract testStorage {\n\n\tuint storeduint1 = 15;\n  uint storeduint2 = 20;\n\t\n}",
+  "sourcePath": "/Users/mitsuhiro/work/truffle-practice/Storage/contracts/testStorage.sol",
+  "ast": {
+    "absolutePath": "/Users/mitsuhiro/work/truffle-practice/Storage/contracts/testStorage.sol",
+    "exportedSymbols": {
+      "testStorage": [
+        65
+      ]
+    },
+    "id": 66,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 65,
+        "linearizedBaseContracts": [
+          65
+        ],
+        "name": "testStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 61,
+            "name": "storeduint1",
+            "nodeType": "VariableDeclaration",
+            "scope": 65,
+            "src": "50:21:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "50:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3135",
+              "id": 60,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "69:2:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_15_by_1",
+                "typeString": "int_const 15"
+              },
+              "value": "15"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 64,
+            "name": "storeduint2",
+            "nodeType": "VariableDeclaration",
+            "scope": 65,
+            "src": "75:21:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 62,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "75:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3230",
+              "id": 63,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "94:2:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_20_by_1",
+                "typeString": "int_const 20"
+              },
+              "value": "20"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 66,
+        "src": "25:76:1"
+      }
+    ],
+    "src": "0:101:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/mitsuhiro/work/truffle-practice/Storage/contracts/testStorage.sol",
+    "exportedSymbols": {
+      "testStorage": [
+        65
+      ]
+    },
+    "id": 66,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 65,
+        "linearizedBaseContracts": [
+          65
+        ],
+        "name": "testStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 61,
+            "name": "storeduint1",
+            "nodeType": "VariableDeclaration",
+            "scope": 65,
+            "src": "50:21:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "50:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3135",
+              "id": 60,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "69:2:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_15_by_1",
+                "typeString": "int_const 15"
+              },
+              "value": "15"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 64,
+            "name": "storeduint2",
+            "nodeType": "VariableDeclaration",
+            "scope": 65,
+            "src": "75:21:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 62,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "75:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3230",
+              "id": 63,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "94:2:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_20_by_1",
+                "typeString": "int_const 20"
+              },
+              "value": "20"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 66,
+        "src": "25:76:1"
+      }
+    ],
+    "src": "0:101:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xb66a3903db3258cd8ae3c0d107220c1c0ceb19df",
+      "transactionHash": "0xca2dd6eb50733ed00dc78a0a29c9cf5b59a2079b29cb4c392430278205d6dd00"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-07-24T09:18:58.293Z"
+}
